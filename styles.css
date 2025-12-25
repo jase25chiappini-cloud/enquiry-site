@@ -768,6 +768,65 @@ a {
   }
 }
 
+/* Lead form (Formspree) */
+.leadForm {
+  margin-top: 18px;
+}
+.leadGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.leadGrid label {
+  display: block;
+}
+.leadGrid span {
+  display: block;
+  font-size: 12px;
+  opacity: 0.8;
+  margin: 0 0 6px;
+}
+.leadGrid input,
+.leadGrid textarea {
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.92);
+}
+.leadGrid input:focus,
+.leadGrid textarea:focus {
+  outline: none;
+  border-color: rgba(59, 130, 246, 0.45);
+}
+.leadWide {
+  grid-column: 1 / -1;
+}
+.formNote {
+  margin: 10px 0 0;
+  opacity: 0.75;
+  font-size: 13px;
+}
+.formSuccess,
+.formError {
+  margin: 10px 0 0;
+  font-size: 13px;
+}
+.hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+@media (max-width: 720px) {
+  .leadGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* =========================
    Premium motion pack
    ========================= */
