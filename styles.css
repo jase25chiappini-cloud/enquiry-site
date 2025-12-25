@@ -376,12 +376,12 @@ a {
   min-height: 54px;
 }
 
-/* Featured badge: centered in the top row (no overlap with the PRO graphic) */
+/* Featured badge: top-center (doesn't push layout, stays off the PRO image) */
 .card--featured .badge {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 10px; /* adjust: 8–14px */
+  transform: translateX(-50%);
   margin: 0;
   z-index: 2;
   overflow: hidden; /* needed for shine */
