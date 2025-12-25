@@ -359,6 +359,49 @@ a {
   border: 1px solid rgba(59, 130, 246, 0.55);
 }
 
+/* Package cards polish */
+.grid--3 {
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Keep the top row consistent */
+.card__top {
+  min-height: 54px;
+}
+
+/* Stop badge overlapping price on the featured card */
+.card--featured .badge {
+  left: 14px;
+  right: auto;
+}
+
+/* Give the price a consistent width so headings align nicely */
+.price {
+  min-width: 140px;
+}
+
+/* Make package images consistent height */
+.card__img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  height: auto; /* aspect-ratio handles it */
+}
+
+/* Push list to take remaining space, button sits at bottom */
+.card .list {
+  flex: 1;
+}
+
+.card .btn--full {
+  margin-top: 12px;
+}
+
 .card__top {
   display: flex;
   align-items: flex-start;
