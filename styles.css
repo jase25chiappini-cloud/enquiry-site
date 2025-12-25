@@ -692,9 +692,10 @@ a {
 
 /* Footer */
 .footer {
-  padding: 28px 0 46px;
-  border-top: 1px solid rgba(34, 54, 95, 0.55);
-  background: rgba(11, 18, 32, 0.65);
+  margin-top: 22px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.16), transparent 60%);
 }
 
 .footer__inner {
@@ -800,14 +801,15 @@ a {
   width: 100%;
   padding: 12px 12px;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
   color: rgba(255, 255, 255, 0.92);
 }
 .leadGrid input:focus,
 .leadGrid textarea:focus {
   outline: none;
   border-color: rgba(59, 130, 246, 0.45);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
 }
 .leadWide {
   grid-column: 1 / -1;
@@ -834,6 +836,24 @@ a {
   .leadGrid {
     grid-template-columns: 1fr;
   }
+}
+
+/* --- CTA form containment (premium blend) --- */
+.cta__card {
+  overflow: hidden; /* prevents “sticking out” vibes */
+}
+
+.cta__divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  margin: 16px 0;
+}
+
+.cta__formWrap {
+  padding: 14px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* =========================
