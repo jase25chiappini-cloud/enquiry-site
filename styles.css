@@ -372,18 +372,26 @@ a {
 
 /* Keep the top row consistent */
 .card__top {
+  position: relative;
   min-height: 54px;
 }
 
-/* Featured badge: keep it in the layout (no overlap with the PRO graphic) */
+/* Featured badge: centered in the top row (no overlap with the PRO graphic) */
 .card--featured .badge {
-  position: static; /* cancels the absolute positioning from .badge */
-  margin: 0 0 10px 0; /* space under the badge */
-  align-self: flex-start; /* sits nicely on the left */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 2;
+  overflow: hidden; /* needed for shine */
+  white-space: nowrap;
 }
 
 /* Give the price a consistent width so headings align nicely */
 .price {
+  position: relative;
+  z-index: 3;
   min-width: 140px;
 }
 
@@ -437,6 +445,43 @@ a {
   border-radius: 14px;
   margin: 10px 0 12px;
   border: 1px solid var(--border);
+}
+
+@keyframes badgeShine {
+  0% {
+    transform: translateX(-140%) skewX(-20deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(140%) skewX(-20deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(140%) skewX(-20deg);
+    opacity: 0;
+  }
+}
+
+.card--featured .badge::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0) 35%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 255, 255, 0) 65%,
+    transparent 100%
+  );
+  animation: badgeShine 2.8s ease-in-out infinite;
+  pointer-events: none;
 }
 
 .list {
@@ -716,6 +761,10 @@ a {
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
+  }
+
+  .card--featured .badge::after {
+    animation: none;
   }
 }
 
