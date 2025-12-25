@@ -245,8 +245,8 @@ a {
 .lead {
   margin: 0 0 16px;
   color: var(--muted);
-  font-size: 16px;
-  line-height: 1.55;
+  font-size: clamp(14.5px, 1.1vw, 16px);
+  line-height: 1.5;
 }
 
 .hero__cta {
@@ -287,9 +287,11 @@ a {
 }
 
 .mini__title {
-  margin: 8px 0 6px;
+  margin: 8px 0 8px;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 17px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 .mini__desc {
@@ -766,6 +768,12 @@ a {
 
   body {
     padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 520px) {
+  .mini__title {
+    font-size: 16px;
   }
 }
 
