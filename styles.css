@@ -375,10 +375,11 @@ a {
   min-height: 54px;
 }
 
-/* Stop badge overlapping price on the featured card */
+/* Featured badge: keep it in the layout (no overlap with the PRO graphic) */
 .card--featured .badge {
-  left: 14px;
-  right: auto;
+  position: static; /* cancels the absolute positioning from .badge */
+  margin: 0 0 10px 0; /* space under the badge */
+  align-self: flex-start; /* sits nicely on the left */
 }
 
 /* Give the price a consistent width so headings align nicely */
