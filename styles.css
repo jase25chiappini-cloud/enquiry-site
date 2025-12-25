@@ -14,6 +14,11 @@
   --line: var(--border);
   --accent: #3b82f6;
   --accent2: #22c55e;
+
+  /* Premium panel gradients */
+  --panel-grad: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+  --panel2-grad: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  --card-grad: linear-gradient(180deg, rgba(17, 30, 58, 0.92), rgba(17, 30, 58, 0.58));
 }
 
 /* Reset / base */
@@ -219,7 +224,7 @@ a {
 .hero__copy {
   padding: 26px;
   border-radius: var(--radius);
-  background: var(--card);
+  background: var(--card-grad);
   border: 1px solid var(--line);
   overflow: hidden;
 }
@@ -268,7 +273,7 @@ a {
 
 .hero__card {
   border-radius: var(--radius);
-  background: var(--panel);
+  background: var(--panel-grad);
   border: 1px solid var(--line);
   padding: 18px;
   overflow: hidden;
@@ -320,7 +325,7 @@ a {
 /* Cards */
 .card {
   position: relative;
-  background: var(--panel);
+  background: var(--panel-grad);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -331,7 +336,7 @@ a {
 
 .panel,
 .package-card {
-  background: var(--panel);
+  background: var(--panel-grad);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -518,7 +523,7 @@ a {
 
 /* Info */
 .info {
-  background: var(--panel2);
+  background: var(--panel2-grad);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 16px;
@@ -603,7 +608,7 @@ a {
   padding: 10px 12px;
   border-radius: 14px;
   border: 1px solid var(--border);
-  background: var(--panel);
+  background: var(--panel-grad);
   font-weight: 800;
 }
 
@@ -613,7 +618,7 @@ a {
 
 /* FAQ */
 .qa {
-  background: var(--panel2);
+  background: var(--panel2-grad);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 12px 14px;
@@ -660,7 +665,7 @@ a {
 }
 
 .cta__card {
-  background: var(--panel2);
+  background: var(--panel2-grad);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
