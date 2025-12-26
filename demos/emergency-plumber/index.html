@@ -47,6 +47,8 @@
               <li>Gas leaks -  Carbon monoxide checks</li>
             </ul>
           </div>
+
+          <div class="heroMedia" aria-hidden="true"></div>
         </div>
       </section>
 
@@ -158,12 +160,14 @@
               Suburb
               <input name="suburb" placeholder="e.g. Norwood" />
             </label>
-            <label>
-              Details
-              <textarea name="details" placeholder="What's happening?"></textarea>
-            </label>
+            <details class="formMore">
+              <summary>Add details (optional)</summary>
+              <div class="formMore__body">
+                <textarea name="details" placeholder="What's happening? (optional)"></textarea>
+              </div>
+            </details>
             <button class="btn" type="submit">Send my request</button>
-            <p class="formSuccess" hidden>Thanks - we'll call you shortly.</p>
+            <p class="formSuccess" hidden>Thanks — we'll call you shortly.</p>
             <p class="formError" hidden>Something went wrong. Please call or text.</p>
           </form>
         </div>

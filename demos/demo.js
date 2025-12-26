@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         io.unobserve(e.target);
       });
     },
-    { threshold: 0.12 }
+    { threshold: 0.12, rootMargin: "0px 0px -10% 0px" }
   );
 
   els.forEach((el) => io.observe(el));
