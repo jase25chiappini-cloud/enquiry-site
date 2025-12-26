@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Demo theme picker (saved across demos)
+  // Demo theme picker (persist across demos)
   (function () {
     const root = document.documentElement;
 
@@ -31,6 +32,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const savedAccent = localStorage.getItem("ef_demo_accent");
     if (savedTheme) root.dataset.theme = savedTheme;
     if (savedAccent) root.dataset.accent = savedAccent;
+
+    function syncPickerUI() {
+      document.querySelectorAll("[data-theme]").forEach((btn) => {
+        btn.classList.toggle("is-on", root.dataset.theme === btn.getAttribute("data-theme"));
+      });
+      document.querySelectorAll("[data-accent]").forEach((btn) => {
+        btn.classList.toggle("is-on", root.dataset.accent === btn.getAttribute("data-accent"));
+      });
+    }
+
+    syncPickerUI();
 
     document.addEventListener("click", (e) => {
       const t = e.target.closest("[data-theme]");
@@ -41,12 +53,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const v = t.getAttribute("data-theme");
         root.dataset.theme = v;
         localStorage.setItem("ef_demo_theme", v);
+        syncPickerUI();
       }
 
       if (a) {
         const v = a.getAttribute("data-accent");
         root.dataset.accent = v;
         localStorage.setItem("ef_demo_accent", v);
+        syncPickerUI();
       }
 
       if (r) {
@@ -54,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
         delete root.dataset.accent;
         localStorage.removeItem("ef_demo_theme");
         localStorage.removeItem("ef_demo_accent");
+        syncPickerUI();
       }
     });
   })();
