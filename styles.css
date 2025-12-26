@@ -647,6 +647,10 @@ html[data-theme="light"] .themePicker__sep {
   background: rgba(0, 0, 0, 0.14);
 }
 
+.themePicker button {
+  cursor: pointer;
+}
+
 /* Demo links */
 .demoLinks {
   display: flex;
