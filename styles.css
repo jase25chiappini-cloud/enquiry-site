@@ -19,6 +19,12 @@
   --panel-grad: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
   --panel2-grad: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
   --card-grad: linear-gradient(180deg, rgba(17, 30, 58, 0.92), rgba(17, 30, 58, 0.58));
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.2, 1.2, 0.2, 1);
+  --dur-1: 180ms;
+  --dur-2: 420ms;
+  --dur-3: 900ms;
 }
 
 /* Reset / base */
@@ -664,7 +670,8 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   align-items: start;
-  margin-top: 8px;
+  max-width: 980px;
+  margin: 10px auto 0;
 }
 
 .ctaLeft,
@@ -676,8 +683,8 @@ a {
 .ctaTop {
   grid-column: 1 / -1;
   text-align: center;
-  max-width: 860px;
-  margin: 0 auto 6px;
+  max-width: 980px;
+  margin: 0 auto 8px;
 }
 
 .ctaTop p {
@@ -736,17 +743,11 @@ a {
   text-align: center;
 }
 
-/* Inputs slightly tighter so it doesn't look like it's spilling */
-.leadGrid input,
-.leadGrid textarea {
-  padding: 10px 12px;
-  border-radius: 14px;
-}
-
 /* On smaller screens, stack cleanly */
 @media (max-width: 900px) {
   .ctaGrid {
     grid-template-columns: 1fr;
+    max-width: none;
   }
   .ctaTop {
     text-align: left;
@@ -763,22 +764,6 @@ a {
     justify-content: flex-start;
     text-align: left;
   }
-}
-
-.cta h2 {
-  margin: 0 0 8px;
-}
-
-.cta p {
-  margin: 0 0 14px;
-  color: var(--muted);
-  line-height: 1.55;
-}
-
-.cta__meta {
-  display: grid;
-  gap: 8px;
-  color: var(--muted);
 }
 
 .cta__card {
@@ -983,30 +968,9 @@ a {
   overflow: hidden; /* prevents “sticking out” vibes */
 }
 
-.cta__divider {
-  height: 1px;
-  background: rgba(255, 255, 255, 0.12);
-  margin: 16px 0;
-}
-
-.cta__formWrap {
-  padding: 14px;
-  border-radius: 16px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 /* =========================
    Premium motion pack
    ========================= */
-
-:root {
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-spring: cubic-bezier(0.2, 1.2, 0.2, 1);
-  --dur-1: 180ms;
-  --dur-2: 420ms;
-  --dur-3: 900ms;
-}
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
