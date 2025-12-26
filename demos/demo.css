@@ -295,7 +295,7 @@ a {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 12px 14px;
-  background: var(--panel);
+  background: var(--panel2-grad);
 }
 
 .faq summary {
@@ -337,8 +337,21 @@ select {
   font: inherit;
 }
 
+select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.65) 50%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.65) 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 50%,
+    calc(100% - 12px) 50%;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 34px;
+}
+
 textarea {
-  min-height: 110px;
+  min-height: 84px;
   resize: vertical;
 }
 
