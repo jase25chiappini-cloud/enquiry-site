@@ -7,36 +7,40 @@
     <link rel="stylesheet" href="/demos/demo.css" />
     <script defer src="/demos/demo.js"></script>
   </head>
-  <body class="demo-page">
-    <header class="demo-top">
-      <div class="demo-container top-inner">
-        <div class="crumb">Demo site by <strong>EnquiryForge</strong></div>
-        <a class="btn ghost" href="/#packages">Get this site</a>
+  <body class="demoPage">
+    <div class="demoTop">
+      <div class="demoTop__inner">
+        <div class="demoTop__badge">Demo site by EnquiryForge</div>
+        <a class="btn btn--small" href="/#packages">Get this site</a>
       </div>
-    </header>
+    </div>
 
-    <main class="demo-container">
-      <section class="section" data-reveal>
-        <div class="hero-grid">
+    <main class="demoContainer">
+      <section class="section reveal">
+        <div class="heroGrid">
           <div>
-            <p class="eyebrow">Electrician — Adelaide</p>
-            <h1>BrightSpark Electrical</h1>
-            <p class="lede">Switchboard upgrades, safety checks, lighting, and emergency callouts — done right the first time.</p>
-            <div class="pill-row">
+            <div class="heroMeta">
+              <span class="pill">Electrician</span>
+              <span class="pill">Adelaide</span>
+            </div>
+            <h1 class="heroTitle">BrightSpark Electrical</h1>
+            <p class="heroLead">Switchboard upgrades, safety checks, lighting, and emergency callouts - done right the first time.</p>
+            <div class="pillRow">
               <span class="pill">Licensed & insured</span>
               <span class="pill">Safety certificates</span>
               <span class="pill">24/7 callouts</span>
             </div>
-            <div class="actions">
+            <div class="heroActions">
               <a class="btn" href="tel:+61470000000">Call: 0470 000 000</a>
-              <a class="btn ghost" href="sms:+61470000000?&body=Hey%20BrightSpark%2C%20need%20help%20with%3A">Text us</a>
-              <a class="btn ghost" href="#quote">Get a quote</a>
+              <a class="btn btn--ghost" href="sms:+61470000000?&body=Hey%20BrightSpark%2C%20need%20help%20with%3A">Text us</a>
+              <a class="btn btn--ghost" href="#quote">Get a quote</a>
             </div>
-            <p class="subtext">Residential & commercial • Clean, on-time, fully insured</p>
+            <p class="muted">Residential & commercial -  Clean, on-time, fully insured</p>
           </div>
-          <div class="hero-card">
+
+          <div class="heroCard">
             <h3>On the first call</h3>
-            <p class="subtext">We confirm your job, safety needs, and schedule the best time.</p>
+            <p class="muted">We confirm your job, safety needs, and schedule the best time.</p>
             <ul class="list">
               <li>Switchboard upgrades & RCDs</li>
               <li>Lighting & power points</li>
@@ -46,99 +50,126 @@
         </div>
       </section>
 
-      <section class="section" data-reveal>
+      <section class="section reveal">
         <h2>Services</h2>
         <div class="grid grid--3">
-          <div class="card">Switchboard upgrades</div>
-          <div class="card">Safety checks & compliance</div>
-          <div class="card">LED lighting & downlights</div>
-          <div class="card">Power points & circuits</div>
-          <div class="card">Fault finding & repairs</div>
-          <div class="card">Emergency electrician 24/7</div>
+          <div class="card service">
+            <div class="serviceIcon">⚡</div>
+            <div>
+              <h3>Switchboards</h3>
+              <p class="muted">Upgrades, RCDs, and safety switches.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">💡</div>
+            <div>
+              <h3>Lighting</h3>
+              <p class="muted">LED, downlights, and feature lighting.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">🔌</div>
+            <div>
+              <h3>Power points</h3>
+              <p class="muted">New circuits and repairs.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">🧰</div>
+            <div>
+              <h3>Fault finding</h3>
+              <p class="muted">Diagnostics and rapid repairs.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">🏢</div>
+            <div>
+              <h3>Commercial</h3>
+              <p class="muted">Fit-outs, maintenance, and safety checks.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">🌙</div>
+            <div>
+              <h3>Emergency</h3>
+              <p class="muted">24/7 faults and urgent repairs.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section" data-reveal>
-        <h2>Why choose us</h2>
-        <div class="grid grid--3">
-          <div class="card">
-            <strong>Safety first</strong>
-            <p class="subtext">Certificates and compliance on every job.</p>
-          </div>
-          <div class="card">
-            <strong>On time</strong>
-            <p class="subtext">Booked windows with text alerts and updates.</p>
-          </div>
-          <div class="card">
-            <strong>Clean finish</strong>
-            <p class="subtext">Drop sheets, tidy cables, and no mess left behind.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" data-reveal>
+      <section class="section reveal">
         <h2>Service areas</h2>
-        <div class="card areas">
-          <ul class="list">
-            <li>Adelaide CBD</li><li>Norwood</li><li>Prospect</li><li>Glenelg</li><li>Henley Beach</li>
-            <li>Semaphore</li><li>Unley</li><li>Goodwood</li><li>Burnside</li><li>Mawson Lakes</li>
+        <div class="card">
+          <ul class="areasList">
+            <li>Adelaide CBD</li>
+            <li>Norwood</li>
+            <li>Prospect</li>
+            <li>Glenelg</li>
+            <li>Henley Beach</li>
+            <li>Semaphore</li>
+            <li>Unley</li>
+            <li>Goodwood</li>
+            <li>Burnside</li>
+            <li>Mawson Lakes</li>
           </ul>
         </div>
       </section>
 
-      <section class="section" data-reveal>
+      <section class="section reveal">
         <h2>Reviews</h2>
-        <div class="grid grid--3">
+        <div class="reviews">
           <div class="card">
-            <strong>“Professional and tidy.”</strong>
-            <p class="subtext">Switchboard upgrade with clear pricing and clean finish.</p>
-            <p class="subtext"><em>— Luke, Norwood</em></p>
+            <p class="reviewQuote">"Professional and tidy."</p>
+            <p class="muted">Switchboard upgrade with clear pricing and clean finish.</p>
+            <p class="muted"><em>Luke, Norwood</em></p>
           </div>
           <div class="card">
-            <strong>“Fast emergency help.”</strong>
-            <p class="subtext">Fault found and fixed same morning.</p>
-            <p class="subtext"><em>— Monica, CBD</em></p>
+            <p class="reviewQuote">"Fast emergency help."</p>
+            <p class="muted">Fault found and fixed the same morning.</p>
+            <p class="muted"><em>Monica, CBD</em></p>
           </div>
           <div class="card">
-            <strong>“Clear communication.”</strong>
-            <p class="subtext">Text updates and arrived on time. Great lighting upgrade.</p>
-            <p class="subtext"><em>— Aaron, Henley Beach</em></p>
+            <p class="reviewQuote">"Clear communication."</p>
+            <p class="muted">Text updates and arrived on time. Great lighting upgrade.</p>
+            <p class="muted"><em>Aaron, Henley Beach</em></p>
           </div>
         </div>
       </section>
 
-      <section class="section" id="quote" data-reveal>
-        <div class="card quote-card">
+      <section class="section reveal" id="quote">
+        <div class="card">
           <h2>Get a fast quote</h2>
-          <p class="subtext">Tell us your job and we’ll confirm a time.</p>
+          <p class="muted">Tell us your job and we'll confirm a time.</p>
           <form class="demo-form">
-            <div>
-              <label for="name">Name</label>
-              <input id="name" name="name" placeholder="Your name" required />
-            </div>
-            <div>
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" placeholder="0470 000 000" required />
-            </div>
-            <div>
-              <label for="service">Service needed</label>
-              <input id="service" name="service" placeholder="Switchboard, lighting, safety check..." />
-            </div>
-            <div>
-              <label for="suburb">Suburb</label>
-              <input id="suburb" name="suburb" placeholder="e.g. Burnside" />
-            </div>
-            <div>
-              <label for="details">Details</label>
-              <textarea id="details" name="details" placeholder="What's needed?"></textarea>
-            </div>
+            <label>
+              Name
+              <input name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Phone
+              <input name="phone" placeholder="0470 000 000" required />
+            </label>
+            <label>
+              Service needed
+              <input name="service" placeholder="Switchboard, lighting, safety check..." />
+            </label>
+            <label>
+              Suburb
+              <input name="suburb" placeholder="e.g. Burnside" />
+            </label>
+            <label>
+              Details
+              <textarea name="details" placeholder="What's needed?"></textarea>
+            </label>
             <button class="btn" type="submit">Send my request</button>
-            <div class="form-success">Thanks — we’ll call you shortly.</div>
+            <p class="formSuccess" hidden>Thanks - we'll call you shortly.</p>
+            <p class="formError" hidden>Something went wrong. Please call or text.</p>
           </form>
         </div>
       </section>
 
-      <section class="section faq" data-reveal>
+      <section class="section faq reveal">
         <h2>FAQ</h2>
         <div class="grid">
           <details open>
@@ -157,14 +188,14 @@
       </section>
     </main>
 
-    <footer class="demo-container footer" data-reveal>
-      <p>Demo site for illustration only — built by EnquiryForge.</p>
+    <footer class="demoContainer footer reveal">
+      <p>Demo site for illustration only - built by EnquiryForge.</p>
       <a class="inline-link" href="/#packages">Back to packages</a>
     </footer>
 
-    <div class="sticky-contact">
+    <div class="demoSticky">
       <a class="btn" href="tel:+61470000000">Call</a>
-      <a class="btn ghost" href="sms:+61470000000?&body=Hey%20BrightSpark%2C%20need%20help%20with%3A">Text</a>
+      <a class="btn btn--ghost" href="sms:+61470000000?&body=Hey%20BrightSpark%2C%20need%20help%20with%3A">Text</a>
     </div>
   </body>
 </html>

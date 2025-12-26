@@ -7,36 +7,40 @@
     <link rel="stylesheet" href="/demos/demo.css" />
     <script defer src="/demos/demo.js"></script>
   </head>
-  <body class="demo-page">
-    <header class="demo-top">
-      <div class="demo-container top-inner">
-        <div class="crumb">Demo site by <strong>EnquiryForge</strong></div>
-        <a class="btn ghost" href="/#packages">Get this site</a>
+  <body class="demoPage">
+    <div class="demoTop">
+      <div class="demoTop__inner">
+        <div class="demoTop__badge">Demo site by EnquiryForge</div>
+        <a class="btn btn--small" href="/#packages">Get this site</a>
       </div>
-    </header>
+    </div>
 
-    <main class="demo-container">
-      <section class="section" data-reveal>
-        <div class="hero-grid">
+    <main class="demoContainer">
+      <section class="section reveal">
+        <div class="heroGrid">
           <div>
-            <p class="eyebrow">Locksmith — Adelaide</p>
-            <h1>SecureKey Locksmiths</h1>
-            <p class="lede">Lockouts, rekeys, smart locks, and security upgrades — day or night.</p>
-            <div class="pill-row">
+            <div class="heroMeta">
+              <span class="pill">Locksmith</span>
+              <span class="pill">Adelaide</span>
+            </div>
+            <h1 class="heroTitle">SecureKey Locksmiths</h1>
+            <p class="heroLead">Lockouts, rekeys, smart locks, and security upgrades - day or night.</p>
+            <div class="pillRow">
               <span class="pill">24/7 lockouts</span>
               <span class="pill">Smart lock installs</span>
               <span class="pill">Residential & commercial</span>
             </div>
-            <div class="actions">
+            <div class="heroActions">
               <a class="btn" href="tel:+61470000000">Call: 0470 000 000</a>
-              <a class="btn ghost" href="sms:+61470000000?&body=Hey%20SecureKey%2C%20need%20help%20with%3A">Text us</a>
-              <a class="btn ghost" href="#quote">Get a quote</a>
+              <a class="btn btn--ghost" href="sms:+61470000000?&body=Hey%20SecureKey%2C%20need%20help%20with%3A">Text us</a>
+              <a class="btn btn--ghost" href="#quote">Get a quote</a>
             </div>
-            <p class="subtext">Licensed, insured, and police-checked locksmiths.</p>
+            <p class="muted">Licensed, insured, and police-checked locksmiths.</p>
           </div>
-          <div class="hero-card">
+
+          <div class="heroCard">
             <h3>On the first call</h3>
-            <p class="subtext">We confirm your location, lock type, and dispatch with an ETA.</p>
+            <p class="muted">We confirm your location, lock type, and dispatch with an ETA.</p>
             <ul class="list">
               <li>Lockouts & emergency entry</li>
               <li>Rekeys, deadbolts, security upgrades</li>
@@ -46,99 +50,126 @@
         </div>
       </section>
 
-      <section class="section" data-reveal>
+      <section class="section reveal">
         <h2>Services</h2>
         <div class="grid grid--3">
-          <div class="card">Lockouts & emergency entry</div>
-          <div class="card">Rekeying & key cutting</div>
-          <div class="card">Deadbolts & security locks</div>
-          <div class="card">Smart lock supply & install</div>
-          <div class="card">Commercial master key systems</div>
-          <div class="card">Car keys (selected models)</div>
+          <div class="card service">
+            <div class="serviceIcon">🔑</div>
+            <div>
+              <h3>Lockouts</h3>
+              <p class="muted">24/7 emergency entry with damage-free methods.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">🧰</div>
+            <div>
+              <h3>Rekeys</h3>
+              <p class="muted">Rekeying, key cutting, and deadbolt installs.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">📱</div>
+            <div>
+              <h3>Smart locks</h3>
+              <p class="muted">Supply and install leading smart lock brands.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">🏢</div>
+            <div>
+              <h3>Commercial</h3>
+              <p class="muted">Master key systems and access upgrades.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">🚗</div>
+            <div>
+              <h3>Car keys</h3>
+              <p class="muted">Selected models cut and programmed.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">🛡</div>
+            <div>
+              <h3>Security</h3>
+              <p class="muted">Security locks, deadbolts, and hardware upgrades.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section" data-reveal>
-        <h2>Why choose us</h2>
-        <div class="grid grid--3">
-          <div class="card">
-            <strong>Fast arrivals</strong>
-            <p class="subtext">We send an ETA and arrive with the right gear.</p>
-          </div>
-          <div class="card">
-            <strong>Damage-free entry</strong>
-            <p class="subtext">Non-destructive methods wherever possible.</p>
-          </div>
-          <div class="card">
-            <strong>Security-first</strong>
-            <p class="subtext">Police-checked locksmiths with ID on arrival.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" data-reveal>
+      <section class="section reveal">
         <h2>Service areas</h2>
-        <div class="card areas">
-          <ul class="list">
-            <li>Adelaide CBD</li><li>North Adelaide</li><li>Prospect</li><li>Norwood</li><li>Glenelg</li>
-            <li>Henley Beach</li><li>Unley</li><li>Goodwood</li><li>Burnside</li><li>West Lakes</li>
+        <div class="card">
+          <ul class="areasList">
+            <li>Adelaide CBD</li>
+            <li>North Adelaide</li>
+            <li>Prospect</li>
+            <li>Norwood</li>
+            <li>Glenelg</li>
+            <li>Henley Beach</li>
+            <li>Unley</li>
+            <li>Goodwood</li>
+            <li>Burnside</li>
+            <li>West Lakes</li>
           </ul>
         </div>
       </section>
 
-      <section class="section" data-reveal>
+      <section class="section reveal">
         <h2>Reviews</h2>
-        <div class="grid grid--3">
+        <div class="reviews">
           <div class="card">
-            <strong>“In fast and no damage.”</strong>
-            <p class="subtext">Unlocked our front door in minutes, no marks.</p>
-            <p class="subtext"><em>— Emma, Prospect</em></p>
+            <p class="reviewQuote">"In fast and no damage."</p>
+            <p class="muted">Unlocked our front door in minutes, no marks.</p>
+            <p class="muted"><em>Emma, Prospect</em></p>
           </div>
           <div class="card">
-            <strong>“Smart lock sorted.”</strong>
-            <p class="subtext">Installed and set up app access the same day.</p>
-            <p class="subtext"><em>— James, Norwood</em></p>
+            <p class="reviewQuote">"Smart lock sorted."</p>
+            <p class="muted">Installed and set up app access the same day.</p>
+            <p class="muted"><em>James, Norwood</em></p>
           </div>
           <div class="card">
-            <strong>“Felt secure.”</strong>
-            <p class="subtext">Rekeyed the house after moving in. Great advice.</p>
-            <p class="subtext"><em>— Priya, Glenelg</em></p>
+            <p class="reviewQuote">"Felt secure."</p>
+            <p class="muted">Rekeyed the house after moving in. Great advice.</p>
+            <p class="muted"><em>Priya, Glenelg</em></p>
           </div>
         </div>
       </section>
 
-      <section class="section" id="quote" data-reveal>
-        <div class="card quote-card">
+      <section class="section reveal" id="quote">
+        <div class="card">
           <h2>Get a fast quote</h2>
-          <p class="subtext">Tell us the lock type and suburb.</p>
+          <p class="muted">Tell us the lock type and suburb.</p>
           <form class="demo-form">
-            <div>
-              <label for="name">Name</label>
-              <input id="name" name="name" placeholder="Your name" required />
-            </div>
-            <div>
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" placeholder="0470 000 000" required />
-            </div>
-            <div>
-              <label for="service">Service needed</label>
-              <input id="service" name="service" placeholder="Lockout, rekey, smart lock..." />
-            </div>
-            <div>
-              <label for="suburb">Suburb</label>
-              <input id="suburb" name="suburb" placeholder="e.g. Glenelg" />
-            </div>
-            <div>
-              <label for="details">Details</label>
-              <textarea id="details" name="details" placeholder="What's needed?"></textarea>
-            </div>
+            <label>
+              Name
+              <input name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Phone
+              <input name="phone" placeholder="0470 000 000" required />
+            </label>
+            <label>
+              Service needed
+              <input name="service" placeholder="Lockout, rekey, smart lock..." />
+            </label>
+            <label>
+              Suburb
+              <input name="suburb" placeholder="e.g. Glenelg" />
+            </label>
+            <label>
+              Details
+              <textarea name="details" placeholder="What's needed?"></textarea>
+            </label>
             <button class="btn" type="submit">Send my request</button>
-            <div class="form-success">Thanks — we’ll call you shortly.</div>
+            <p class="formSuccess" hidden>Thanks - we'll call you shortly.</p>
+            <p class="formError" hidden>Something went wrong. Please call or text.</p>
           </form>
         </div>
       </section>
 
-      <section class="section faq" data-reveal>
+      <section class="section faq reveal">
         <h2>FAQ</h2>
         <div class="grid">
           <details open>
@@ -157,14 +188,14 @@
       </section>
     </main>
 
-    <footer class="demo-container footer" data-reveal>
-      <p>Demo site for illustration only — built by EnquiryForge.</p>
+    <footer class="demoContainer footer reveal">
+      <p>Demo site for illustration only - built by EnquiryForge.</p>
       <a class="inline-link" href="/#packages">Back to packages</a>
     </footer>
 
-    <div class="sticky-contact">
+    <div class="demoSticky">
       <a class="btn" href="tel:+61470000000">Call</a>
-      <a class="btn ghost" href="sms:+61470000000?&body=Hey%20SecureKey%2C%20need%20help%20with%3A">Text</a>
+      <a class="btn btn--ghost" href="sms:+61470000000?&body=Hey%20SecureKey%2C%20need%20help%20with%3A">Text</a>
     </div>
   </body>
 </html>

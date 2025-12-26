@@ -7,49 +7,64 @@
     <link rel="stylesheet" href="/demos/demo.css" />
     <script defer src="/demos/demo.js"></script>
   </head>
-  <body class="demo-page">
-    <header class="demo-top">
-      <div class="demo-container top-inner">
-        <a class="crumb" href="/">← Back to main site</a>
-        <a class="btn ghost" href="/#packages">Get this site</a>
+  <body class="demoPage">
+    <div class="demoTop">
+      <div class="demoTop__inner">
+        <div class="demoTop__badge">Demo site by EnquiryForge</div>
+        <a class="btn btn--small" href="/#packages">Get this site</a>
       </div>
-    </header>
+    </div>
 
-    <main class="demo-container">
-      <section class="hero-slim" data-reveal>
-        <p class="eyebrow">Live demos</p>
-        <h1>Pick a base layout, then we tailor it to your trade.</h1>
-        <p class="lede">No fluff — just high-converting layouts you can preview in-browser.</p>
+    <main class="demoContainer">
+      <section class="section reveal">
+        <div class="heroGrid">
+          <div>
+            <div class="heroMeta">
+              <span class="pill">Live demos</span>
+              <span class="pill">Trade ready</span>
+            </div>
+            <h1 class="heroTitle">Pick a base layout, then we tailor it to your trade.</h1>
+            <p class="heroLead">No fluff - just high-converting layouts you can preview in-browser.</p>
+            <div class="heroActions">
+              <a class="btn" href="/#packages">Get this site</a>
+              <a class="btn btn--ghost" href="/#get-started">Request my build</a>
+            </div>
+          </div>
+          <div class="heroCard">
+            <p class="muted">Every demo uses the same shared CSS and JS, so spacing, buttons, and forms stay in sync across niches.</p>
+            <ul class="list">
+              <li>Badge + CTA top bar</li>
+              <li>Hero, services, areas, reviews, FAQ</li>
+              <li>Fake form submit (no email spam)</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <section class="tile-section" data-reveal>
-        <div class="tile-grid">
-          <a class="tile" href="/demos/emergency-plumber/">
-            <div class="tile-top">
-              <h3>Emergency Plumber</h3>
-              <span class="tag">Fast callouts</span>
-            </div>
-            <p>After-hours bursts, leaks, and hot water fixes that convert fast.</p>
-            <div class="inline-link">Open demo →</div>
+      <section class="section reveal">
+        <div class="grid grid--3">
+          <a class="card" href="/demos/emergency-plumber/">
+            <h3>Emergency Plumber</h3>
+            <p class="muted">After-hours bursts, leaks, and hot water fixes that convert fast.</p>
+            <div class="inline-link">Open demo -></div>
           </a>
-          <a class="tile" href="/demos/electrician/">
-            <div class="tile-top">
-              <h3>Electrician</h3>
-              <span class="tag">Local & 24/7</span>
-            </div>
-            <p>Switchboards, safety checks, lighting, and emergency callouts.</p>
-            <div class="inline-link">Open demo →</div>
+          <a class="card" href="/demos/electrician/">
+            <h3>Electrician</h3>
+            <p class="muted">Switchboards, safety checks, lighting, and emergency callouts.</p>
+            <div class="inline-link">Open demo -></div>
           </a>
-          <a class="tile" href="/demos/locksmith/">
-            <div class="tile-top">
-              <h3>Locksmith</h3>
-              <span class="tag">Rapid entry</span>
-            </div>
-            <p>Lockouts, rekeys, smart locks, and security upgrades.</p>
-            <div class="inline-link">Open demo →</div>
+          <a class="card" href="/demos/locksmith/">
+            <h3>Locksmith</h3>
+            <p class="muted">Lockouts, rekeys, smart locks, and security upgrades.</p>
+            <div class="inline-link">Open demo -></div>
           </a>
         </div>
       </section>
     </main>
+
+    <footer class="demoContainer footer reveal">
+      <p>Demo sites for illustration only - built by EnquiryForge.</p>
+      <a class="inline-link" href="/#packages">Back to packages</a>
+    </footer>
   </body>
 </html>

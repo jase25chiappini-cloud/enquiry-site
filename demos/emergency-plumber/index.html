@@ -7,138 +7,169 @@
     <link rel="stylesheet" href="/demos/demo.css" />
     <script defer src="/demos/demo.js"></script>
   </head>
-  <body class="demo-page">
-    <header class="demo-top">
-      <div class="demo-container top-inner">
-        <div class="crumb">Demo site by <strong>EnquiryForge</strong></div>
-        <a class="btn ghost" href="/#packages">Get this site</a>
+  <body class="demoPage">
+    <div class="demoTop">
+      <div class="demoTop__inner">
+        <div class="demoTop__badge">Demo site by EnquiryForge</div>
+        <a class="btn btn--small" href="/#packages">Get this site</a>
       </div>
-    </header>
+    </div>
 
-    <main class="demo-container">
-      <section class="section" data-reveal>
-        <div class="hero-grid">
+    <main class="demoContainer">
+      <section class="section reveal">
+        <div class="heroGrid">
           <div>
-            <p class="eyebrow">Emergency plumber — Adelaide</p>
-            <h1>Rapid Response Plumbing</h1>
-            <p class="lede">After-hours bursts, leaks, and hot water fixes with real humans answering the phone.</p>
-            <div class="pill-row">
+            <div class="heroMeta">
+              <span class="pill">Emergency plumber</span>
+              <span class="pill">Adelaide</span>
+            </div>
+            <h1 class="heroTitle">Rapid Response Plumbing</h1>
+            <p class="heroLead">After-hours bursts, leaks, and hot water fixes with real humans answering the phone.</p>
+            <div class="pillRow">
               <span class="pill">24/7 callouts</span>
               <span class="pill">Same-day hot water</span>
               <span class="pill">Upfront pricing</span>
             </div>
-            <div class="actions">
+            <div class="heroActions">
               <a class="btn" href="tel:+61470000000">Call: 0470 000 000</a>
-              <a class="btn ghost" href="sms:+61470000000?&body=Hey%20Rapid%20Response%20Plumbing%2C%20need%20help%20with%3A">Text us</a>
-              <a class="btn ghost" href="#quote">Get a quote</a>
+              <a class="btn btn--ghost" href="sms:+61470000000?&body=Hey%20Rapid%20Response%20Plumbing%2C%20need%20help%20with%3A">Text us</a>
+              <a class="btn btn--ghost" href="#quote">Get a quote</a>
             </div>
-            <p class="subtext">Emergency licenses • Insured • Card & EFT available</p>
+            <p class="muted">Licensed -  Insured -  Card & EFT available</p>
           </div>
-          <div class="hero-card">
+
+          <div class="heroCard">
             <h3>On the first call</h3>
-            <p class="subtext">We confirm location, isolate water/power if needed, and dispatch a plumber.</p>
+            <p class="muted">We confirm location, isolate water/power if needed, and dispatch a plumber.</p>
             <ul class="list">
-              <li>Blocked drains • Burst pipes • Leaks</li>
+              <li>Blocked drains -  Burst pipes -  Leaks</li>
               <li>Hot water repairs & replacements</li>
-              <li>Gas leaks • Carbon monoxide checks</li>
+              <li>Gas leaks -  Carbon monoxide checks</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section class="section" data-reveal>
+      <section class="section reveal">
         <h2>Services</h2>
         <div class="grid grid--3">
-          <div class="card">Blocked drains & CCTV inspections</div>
-          <div class="card">Hot water repairs & replacements</div>
-          <div class="card">Burst pipes & leak detection</div>
-          <div class="card">Gas fitting & safety checks</div>
-          <div class="card">Toilet repairs & replacements</div>
-          <div class="card">After-hours emergency callouts</div>
+          <div class="card service">
+            <div class="serviceIcon">🚰</div>
+            <div>
+              <h3>Blocked drains</h3>
+              <p class="muted">CCTV inspections, jetting, and root removal.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">🔥</div>
+            <div>
+              <h3>Hot water</h3>
+              <p class="muted">Repairs, replacements, and same-day installs.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">🛠</div>
+            <div>
+              <h3>Burst pipes</h3>
+              <p class="muted">Leak detection and emergency isolation.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">🔥</div>
+            <div>
+              <h3>Gas fitting</h3>
+              <p class="muted">Gas leaks, compliance checks, and repairs.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">🚿</div>
+            <div>
+              <h3>Toilets & taps</h3>
+              <p class="muted">Fixes, replacements, and water-saving upgrades.</p>
+            </div>
+          </div>
+          <div class="card service">
+            <div class="serviceIcon">🌙</div>
+            <div>
+              <h3>After-hours</h3>
+              <p class="muted">24/7 callouts with upfront pricing.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section" data-reveal>
-        <h2>Why choose us</h2>
-        <div class="grid grid--3">
-          <div class="card">
-            <strong>Rapid dispatch</strong>
-            <p class="subtext">We answer in under 10 seconds and send an ETA immediately.</p>
-          </div>
-          <div class="card">
-            <strong>Upfront pricing</strong>
-            <p class="subtext">Clear rates before we start. No weekend surprises.</p>
-          </div>
-          <div class="card">
-            <strong>Licensed & insured</strong>
-            <p class="subtext">Fully licensed plumbers with insurance and compliance certificates.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" data-reveal>
+      <section class="section reveal">
         <h2>Service areas</h2>
-        <div class="card areas">
-          <ul class="list">
-            <li>Adelaide CBD</li><li>Prospect</li><li>Norwood</li><li>Glenelg</li><li>Henley Beach</li>
-            <li>Marion</li><li>Mawson Lakes</li><li>Unley</li><li>Goodwood</li><li>Burnside</li>
+        <div class="card">
+          <ul class="areasList">
+            <li>Adelaide CBD</li>
+            <li>Prospect</li>
+            <li>Norwood</li>
+            <li>Glenelg</li>
+            <li>Henley Beach</li>
+            <li>Marion</li>
+            <li>Mawson Lakes</li>
+            <li>Unley</li>
+            <li>Goodwood</li>
+            <li>Burnside</li>
           </ul>
         </div>
       </section>
 
-      <section class="section" data-reveal>
+      <section class="section reveal">
         <h2>Reviews</h2>
-        <div class="grid grid--3">
+        <div class="reviews">
           <div class="card">
-            <strong>“Fast and tidy.”</strong>
-            <p class="subtext">Burst pipe fixed in under an hour. Left everything clean.</p>
-            <p class="subtext"><em>— Sarah, Glenelg</em></p>
+            <p class="reviewQuote">"Fast and tidy."</p>
+            <p class="muted">Burst pipe fixed in under an hour. Left everything clean.</p>
+            <p class="muted"><em>Sarah, Glenelg</em></p>
           </div>
           <div class="card">
-            <strong>“Upfront price.”</strong>
-            <p class="subtext">Explained costs before starting. No surprises.</p>
-            <p class="subtext"><em>— Daniel, Prospect</em></p>
+            <p class="reviewQuote">"Upfront price."</p>
+            <p class="muted">Explained costs before starting. No surprises.</p>
+            <p class="muted"><em>Daniel, Prospect</em></p>
           </div>
           <div class="card">
-            <strong>“Hot water back on.”</strong>
-            <p class="subtext">New system installed same day after ours failed.</p>
-            <p class="subtext"><em>— Rina, Marion</em></p>
+            <p class="reviewQuote">"Hot water back on."</p>
+            <p class="muted">New system installed same day after ours failed.</p>
+            <p class="muted"><em>Rina, Marion</em></p>
           </div>
         </div>
       </section>
 
-      <section class="section" id="quote" data-reveal>
-        <div class="card quote-card">
+      <section class="section reveal" id="quote">
+        <div class="card">
           <h2>Get a fast quote</h2>
-          <p class="subtext">We’ll text back with an ETA and price range.</p>
+          <p class="muted">We'll text back with an ETA and price range.</p>
           <form class="demo-form">
-            <div>
-              <label for="name">Name</label>
-              <input id="name" name="name" placeholder="Your name" required />
-            </div>
-            <div>
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" placeholder="0470 000 000" required />
-            </div>
-            <div>
-              <label for="service">Service needed</label>
-              <input id="service" name="service" placeholder="Burst pipe, hot water, gas, etc." />
-            </div>
-            <div>
-              <label for="suburb">Suburb</label>
-              <input id="suburb" name="suburb" placeholder="e.g. Norwood" />
-            </div>
-            <div>
-              <label for="details">Details</label>
-              <textarea id="details" name="details" placeholder="What's happening?"></textarea>
-            </div>
+            <label>
+              Name
+              <input name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Phone
+              <input name="phone" placeholder="0470 000 000" required />
+            </label>
+            <label>
+              Service needed
+              <input name="service" placeholder="Burst pipe, hot water, gas, etc." />
+            </label>
+            <label>
+              Suburb
+              <input name="suburb" placeholder="e.g. Norwood" />
+            </label>
+            <label>
+              Details
+              <textarea name="details" placeholder="What's happening?"></textarea>
+            </label>
             <button class="btn" type="submit">Send my request</button>
-            <div class="form-success">Thanks — we’ll call you shortly.</div>
+            <p class="formSuccess" hidden>Thanks - we'll call you shortly.</p>
+            <p class="formError" hidden>Something went wrong. Please call or text.</p>
           </form>
         </div>
       </section>
 
-      <section class="section faq" data-reveal>
+      <section class="section faq reveal">
         <h2>FAQ</h2>
         <div class="grid">
           <details open>
@@ -157,14 +188,14 @@
       </section>
     </main>
 
-    <footer class="demo-container footer" data-reveal>
-      <p>Demo site for illustration only — built by EnquiryForge.</p>
+    <footer class="demoContainer footer reveal">
+      <p>Demo site for illustration only - built by EnquiryForge.</p>
       <a class="inline-link" href="/#packages">Back to packages</a>
     </footer>
 
-    <div class="sticky-contact">
+    <div class="demoSticky">
       <a class="btn" href="tel:+61470000000">Call</a>
-      <a class="btn ghost" href="sms:+61470000000?&body=Hey%20Rapid%20Response%20Plumbing%2C%20need%20help%20with%3A">Text</a>
+      <a class="btn btn--ghost" href="sms:+61470000000?&body=Hey%20Rapid%20Response%20Plumbing%2C%20need%20help%20with%3A">Text</a>
     </div>
   </body>
 </html>
