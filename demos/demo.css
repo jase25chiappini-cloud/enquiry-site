@@ -50,33 +50,6 @@ html[data-accent="slate"] {
   --tint: rgba(56, 189, 248, 0.16);
 }
 
-html[data-theme="light"] {
-  --bg: #f5f7fb;
-  --panel: rgba(0, 0, 0, 0.04);
-  --panel2: rgba(0, 0, 0, 0.06);
-  --border: rgba(0, 0, 0, 0.1);
-  --text: rgba(10, 18, 34, 0.92);
-  --muted: rgba(10, 18, 34, 0.7);
-  --shadow: 0 14px 38px rgba(10, 18, 34, 0.14);
-}
-
-html[data-accent="ocean"] {
-  --accent: #3b82f6;
-  --tint: rgba(59, 130, 246, 0.18);
-}
-html[data-accent="amber"] {
-  --accent: #f59e0b;
-  --tint: rgba(245, 158, 11, 0.18);
-}
-html[data-accent="violet"] {
-  --accent: #8b5cf6;
-  --tint: rgba(139, 92, 246, 0.18);
-}
-html[data-accent="slate"] {
-  --accent: #38bdf8;
-  --tint: rgba(56, 189, 248, 0.16);
-}
-
 *,
 *::before,
 *::after {
@@ -254,7 +227,17 @@ html[data-theme="light"] .stylePicker__panel {
 }
 
 .stylePicker .chip {
-  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 800;
+  font-size: 12px;
+  transition: transform 120ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
 .stylePicker .chip--ghost {
@@ -265,6 +248,42 @@ html[data-theme="light"] .stylePicker__panel {
 html[data-theme="light"] .stylePicker .chip--ghost {
   background: rgba(0, 0, 0, 0.04);
   border-color: rgba(0, 0, 0, 0.12);
+}
+
+.stylePicker .chip:hover {
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--accent) 40%, rgba(255, 255, 255, 0.12));
+}
+
+html[data-theme="light"] .stylePicker .chip {
+  border-color: var(--chipbd, rgba(0, 0, 0, 0.12));
+  background: var(--chipbg, rgba(0, 0, 0, 0.04));
+  color: rgba(10, 18, 34, 0.86);
+}
+
+.sw {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.sw--ocean {
+  background: #3b82f6;
+}
+.sw--amber {
+  background: #f59e0b;
+}
+.sw--violet {
+  background: #8b5cf6;
+}
+.sw--slate {
+  background: #38bdf8;
+}
+
+.stylePicker .chip.is-on {
+  border-color: color-mix(in srgb, var(--accent) 60%, rgba(255, 255, 255, 0.12));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
 }
 
 .btn--small {
