@@ -659,42 +659,38 @@ a {
   display: block;
 }
 
-.ctaHead {
-  text-align: center;
-  max-width: 860px;
-  margin: 0 auto 18px;
-}
-
-.ctaHead h2 {
-  margin: 0 0 10px;
-}
-
-.ctaHead p {
-  margin: 0 auto 14px;
-  color: var(--muted);
-  max-width: 68ch;
-}
-
-.ctaHead .cta__meta {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.ctaHead .cta__meta > div {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 14px;
-  padding: 10px 12px;
-}
-
 .ctaGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   align-items: start;
   margin-top: 8px;
+}
+
+.ctaTop {
+  grid-column: 1 / -1;
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 6px;
+}
+
+.ctaTop p {
+  max-width: 68ch;
+  margin: 8px auto 14px;
+}
+
+.ctaTop .cta__meta {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ctaTop .cta__meta > div {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 10px 12px;
 }
 
 .ctaRight {
@@ -725,6 +721,17 @@ a {
 @media (max-width: 900px) {
   .ctaGrid {
     grid-template-columns: 1fr;
+  }
+  .ctaTop {
+    text-align: left;
+    max-width: none;
+  }
+  .ctaTop p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .ctaTop .cta__meta {
+    justify-content: flex-start;
   }
   .ctaFormCard {
     padding: 14px;
